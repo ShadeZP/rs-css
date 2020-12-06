@@ -259,19 +259,20 @@ highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default().registerLanguage("H
 
     this.usersNodeList.forEach(function (e, i) {
       if (e !== _this3.winNodeList[i]) {
-        _this3.usersNodeList.forEach(function (elem) {
-          isWin = false;
-          elem.classList.add('shake'); // eslint-disable-next-line no-param-reassign
-
-          elem.onanimationend = function () {
-            return e.classList.remove('shake');
-          };
-        });
+        isWin = false;
       }
     });
 
     if (isWin) {
       this.checkWinGame();
+    } else {
+      this.usersNodeList.forEach(function (elem) {
+        elem.classList.add('shake'); // eslint-disable-next-line no-param-reassign
+
+        elem.onanimationend = function () {
+          return elem.classList.remove('shake');
+        };
+      });
     }
   },
   getHelp: function getHelp() {
