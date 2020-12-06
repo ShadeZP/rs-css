@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+  <div class="container grid">
+    <header class="header">
+      <h1 class="title">RS-CSS</h1>
+    </header>
+    <main class="main main__wrapper">
+      <span class="task-description">task-description</span>
+      <button class="menu-button">MENU</button>
+      <button class="help-button" id="help-button">Help, I am stuck!</button>
+      <div class="game game__wrapper">
+        <div class="table game__table">
+          <div class="table__surface">
+            <div class="items table__items"></div>
+          </div>
+        </div>
+        <div class="table__edge">
+          <div class="table__leg table__leg_left"></div>
+          <div class="table__leg table__leg_right"></div>
+        </div>
+      </div>
+      <div class="editor">
+        <div class="editor__title editor__title_css">CSS Editor</div>
+        <div class="editor__pane css-editor">
+          <div class="numbering css-editor__numbering">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</div>
+          <input type="text" placeholder="Type in a CSS selector" class="css-editor__input">
+          <button class="css-editor__button">enter</button>          
+        </div>
+        <div class="editor__title editor__title_html">HTML Viewer</div>
+        <div class="editor__pane html-viewer">
+          <div class="numbering html-viewer__numbering">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</div>
+            <div class="markup">
+              <div class="code">&lt;div class="table"&gt;</div>
+              <div class="markup__viewer"></div>
+              <div class="code">&lt;/div&gt;</div>
+            </div>
+        </div>
+      </div>
+      <div class="helper"></div>
+    </main>
+    <aside class="aside">
+      <div class="menu-level">
+        <span class="menu-level__title">Chose a level</span>
+        <div class="menu-level__levels">
+        </div>
+        <button class="menu-level__button" id="reset-button">Reset Progress</button>
+      </div>
+    </aside>
+    <footer class="footer">
+      <a href="https://github.com/ShadeZP/" class="github-link"><img src="./img/GitHub-Mark-32px.png" alt="github-logo"></a>
+      <a href="https://rs.school/js/" class="rs-link"><img src="https://rs.school/images/rs_school_js.svg" alt="github-logo" width="32px" height="32px"></a>
+      <span>2020 &copy;</span>
+    </footer>
+  </div>
+<script src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_highlight_js_lib_core_js-node_m-3b4b9e.js"></script><script src="main.js"></script></body>
+</html>
