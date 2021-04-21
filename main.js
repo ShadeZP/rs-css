@@ -192,7 +192,7 @@ highlight_js_lib_core__WEBPACK_IMPORTED_MODULE_0___default().registerLanguage("H
       };
 
       try {
-        var tableElem = document.querySelector('.table__surface');
+        var tableElem = document.querySelector('.table__items');
         this.usersNodeList = tableElem.querySelectorAll(selector);
         this.checkWinState();
       } catch (err) {
